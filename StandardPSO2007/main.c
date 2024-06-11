@@ -208,9 +208,9 @@ struct param
 	int clamping;	// Position clamping or not
 	int K;			// Max number of particles informed by a given one
 	double p;		// Probability threshold for random topology	
-	// (is actually computed as p(S,K) )
+					// (is actually computed as p(S,K) )
 	int randOrder;	// Random choice of particles or not
-	int rand; // 0 => use KISS. Any other value: use the standard C RNG
+	int rand;		// 0 => use KISS. Any other value: use the standard C RNG
 	int initLink; // How to re-init links
 	int rotation;	// Sensitive to rotation or not
 	int S;			// Swarm size
@@ -331,8 +331,16 @@ int main ()
 	double successRate;
 	double variance;
 
-	f_run = fopen ("f_run.txt", "w");  
-	f_synth = fopen ("f_synth.txt", "w"); 
+	/*f_run = fopen ("f_run.txt", "w");  
+	f_synth = fopen ("f_synth.txt", "w"); */
+
+	errno_t err1 = fopen_s(&f_run, "f_run.txt", "w");
+	errno_t err2 = fopen_s(&f_run, "f_run.txt", "w");
+	if (err1 != 0 || err2 != 0)
+	{
+		printf("\n Files error");
+		return 1;
+	}
 
 	E = exp ((long double) 1); 
 	pi = acos ((long double) -1);
@@ -476,6 +484,7 @@ int main ()
 	errorMean = 0;	    
 	evalMean = 0;	    
 	nFailure = 0;	
+	logProgressMean = 0;
 	//------------------------------------- RUNS
 	seed_rand_kiss(1294404794);	// For reproducible results, if using KISS
 	for (run = 0; run < runMax; run++)  
@@ -551,6 +560,7 @@ int main ()
 
 	return 0; // End of main program
 }
+
 // ===============================================================
 // PSO
 struct result PSO (struct param param, struct problem pb) 
@@ -1296,7 +1306,7 @@ double perf (struct position x, int function, struct SS SS, double objective)
 	double t0, tt, t1;
 	double u;
 	struct position xs; 
-	#include "cec2005data.c"
+	//#include "cec2005data.c"
 	/*
 	// Shifted Parabola/Sphere (CEC 2005 benchmark)		
 	static double offset_0[30] =
@@ -1348,16 +1358,16 @@ double perf (struct position x, int function, struct SS SS, double objective)
 
 	switch (function)
 	{
-	#include "cec2005.c"
+	//#include "cec2005.c"
 
 			case 0:		// Parabola (Sphere)
 				f = 0;
 
 			for (d = 0; d < xs.size; d++) 
-		{    
-			xd = xs.x[d];   
-			f = f + xd * xd;    
-		}	  
+			{    
+				xd = xs.x[d];   
+				f = f + xd * xd;    
+			}	  
 			break;
 
 			case 1:		// Griewank
@@ -1365,11 +1375,11 @@ double perf (struct position x, int function, struct SS SS, double objective)
 			p = 1;
 
 			for (d = 0; d < xs.size; d++)
-		{      
-			xd = xs.x[d];
-			f = f + xd * xd;	      
-			p = p * cos (xd / sqrt ((double) (d + 1)));	    
-		} 
+			{      
+				xd = xs.x[d];
+				f = f + xd * xd;	      
+				p = p * cos (xd / sqrt ((double) (d + 1)));	    
+			} 
 			f = f / 4000 - p + 1;	  
 			break;
 
@@ -1378,15 +1388,15 @@ double perf (struct position x, int function, struct SS SS, double objective)
 			t0 = xs.x[0]  + 1;	// Solution on (0,...0) when
 			// offset=0
 			for (d = 1; d < xs.size; d++)
-		{     
+			{     
 
-			t1 = xs.x[d]  + 1;	      
-			tt = 1 - t0;	      
-			f += tt * tt;      
-			tt = t1 - t0 * t0;      
-			f += 100 * tt * tt;	      
-			t0 = t1;    
-		}  
+				t1 = xs.x[d]  + 1;	      
+				tt = 1 - t0;	      
+				f += tt * tt;      
+				tt = t1 - t0 * t0;      
+				f += 100 * tt * tt;	      
+				t0 = t1;    
+			}  
 			break;
 
 			case 3:		// Rastrigin
@@ -1394,10 +1404,10 @@ double perf (struct position x, int function, struct SS SS, double objective)
 			f = 0;
 
 			for (d = 0; d < xs.size; d++)    
-		{     
-			xd = xs.x[d];
-			f =f+ xd * xd - k * cos (2 * pi * xd);	    
-		}	  
+			{     
+				xd = xs.x[d];
+				f =f+ xd * xd - k * cos (2 * pi * xd);	    
+			}	  
 			f =f+ xs.size * k;  
 			break;
 
@@ -1425,11 +1435,11 @@ double perf (struct position x, int function, struct SS SS, double objective)
 			DD=x.size;
 			pi=acos(-1);
 			for (d=0;d<x.size;d++)
-		{
-			xd=xs.x[d];
-			sum1=sum1+xd*xd;
-			sum2=sum2+cos(2*pi*xd);
-		}
+			{
+				xd=xs.x[d];
+				sum1=sum1+xd*xd;
+				sum2=sum2+cos(2*pi*xd);
+			}
 			f=-20*exp(-0.2*sqrt(  sum1/DD  ))-exp(sum2/DD)+20+exp(1);
 
 			break;
@@ -1437,45 +1447,45 @@ double perf (struct position x, int function, struct SS SS, double objective)
 			case 6: // Schwefel
 				f=0;
 			for (d=0;d<x.size;d++)
-		{
-			xd = xs.x[d];
-			f=f-xd*sin(sqrt(fabs(xd)));
-		}
-		break;
+			{
+				xd = xs.x[d];
+				f=f-xd*sin(sqrt(fabs(xd)));
+			}
+			break;
 
 			case 7: // Schwefel 1.2
 				f=0;
 			for (d=0;d<x.size;d++)
-		{
-			xd = xs.x[d];
-			sum1=0;
-			for(k=0;k<=d;k++) sum1=sum1+xd;
-			f=f+sum1*sum1;
-		}
+			{
+				xd = xs.x[d];
+				sum1=0;
+				for(k=0;k<=d;k++) sum1=sum1+xd;
+				f=f+sum1*sum1;
+			}
 			break;
 
 			case 8: // Schwefel 2.22
 				sum1=0; sum2=1;
 			for (d=0;d<x.size;d++)
-		{
-			xd = fabs(xs.x[d]);
-			sum1=sum1+xd;
-			sum2=sum2*xd;
-		}
+			{
+				xd = fabs(xs.x[d]);
+				sum1=sum1+xd;
+				sum2=sum2*xd;
+			}
 			f=sum1+sum2;
 			break;
 
 			case 9: // Neumaier 3
 				sum1=0; sum2=1;
 			for (d=0;d<x.size;d++)
-		{
-			xd = xs.x[d]-1;
-			sum1=sum1+xd*xd;
-		}
-			for (d=1;d<x.size;d++)
-		{
-			sum2=sum2+ xs.x[d]* xs.x[d-1];
-		}	
+			{
+				xd = xs.x[d]-1;
+				sum1=sum1+xd*xd;
+			}
+				for (d=1;d<x.size;d++)
+			{
+				sum2=sum2+ xs.x[d]* xs.x[d-1];
+			}	
 
 			f=sum1+sum2;
 			break;
@@ -1485,11 +1495,11 @@ double perf (struct position x, int function, struct SS SS, double objective)
 				f=1;
 			sum1=0;
 			for (d=0;d<x.size;d++)
-		{
-			xd = xs.x[d];
-			f=f*xd;
-			sum1=sum1+xd*xd;
-		}
+			{
+				xd = xs.x[d];
+				f=f*xd;
+				sum1=sum1+xd*xd;
+			}
 			f=fabs(1-pow(x.size,x.size/2)*f) + x.size*fabs(sum1-1);
 			break;
 
@@ -1498,67 +1508,67 @@ double perf (struct position x, int function, struct SS SS, double objective)
 				f=0;
 			// Constraint: each BTS has one link to one BSC 
 			for(d=0;d<btsNb;d++)
-		{
-			sum1=0;
-			for(k=0;k<bcsNb;k++) sum1=sum1+xs.x[d+k*btsNb];
-			if(sum1<1-zero || sum1>1+zero) f=f+btsPenalty;	
-
-		}
-			// Distances
-			for(d=0;d<bcsNb;d++) //For each BCS d
-		{	
-			for(k=0;k<btsNb;k++) // For each BTS k
 			{
-				if(xs.x[k+d*btsNb]<1) continue;
-				// There is a link between BTS k and BCS d
-				n=bcsNb*btsNb+2*d;
-				z1=bts[k][0]-xs.x[n];
-				z2=bts[k][1]-xs.x[n+1];		
-				f=f+sqrt(z1*z1+z2*z2);
+				sum1=0;
+				for(k=0;k<bcsNb;k++) sum1=sum1+xs.x[d+k*btsNb];
+				if(sum1<1-zero || sum1>1+zero) f=f+btsPenalty;	
+
 			}
-		}
+				// Distances
+			for(d=0;d<bcsNb;d++) //For each BCS d
+			{	
+				for(k=0;k<btsNb;k++) // For each BTS k
+				{
+					if(xs.x[k+d*btsNb]<1) continue;
+					// There is a link between BTS k and BCS d
+					n=bcsNb*btsNb+2*d;
+					z1=bts[k][0]-xs.x[n];
+					z2=bts[k][1]-xs.x[n+1];		
+					f=f+sqrt(z1*z1+z2*z2);
+				}
+			}
 			break;
 
-		case 12: // Schwefel
-			f=0;
-			for (d=0;d<x.size;d++)
-		{
-			xd = xs.x[d];
-			f=f-xd*sin(sqrt(fabs(xd)));
-		}	
-			break;
+			case 12: // Schwefel
+				f=0;
+				for (d=0;d<x.size;d++)
+				{
+					xd = xs.x[d];
+					f=f-xd*sin(sqrt(fabs(xd)));
+				}	
+				break;
 
 			case 13: // 2D Goldstein-Price function
 				x1=xs.x[0]; x2=xs.x[1];
 
-			f= (1 + pow(x1 + x2 + 1, 2) *(19-14 *x1 + 3*x1*x1-14* x2 + 6* x1* x2 + 3*x2*x2 ))
+				f= (1 + pow(x1 + x2 + 1, 2) *(19-14 *x1 + 3*x1*x1-14* x2 + 6* x1* x2 + 3*x2*x2 ))
 				* (30 + pow(2* x1 - 3*x2 ,2)*
 				   (18 -32 *x1 + 12 *x1*x1 + 48* x2 - 36* x1 *x2 + 27* x2*x2 ));
-			break;
+				break;
 
 			case 14:  //Schaffer F6
 				x1=xs.x[0]; x2=xs.x[1];
-			f= 0.5 + (pow(sin(sqrt(x1*x1 + x2*x2)),2) - 0.5)/pow(1.0 + 0.001*(x1*x1 + x2*x2),2); 
+				f= 0.5 + (pow(sin(sqrt(x1*x1 + x2*x2)),2) - 0.5)/pow(1.0 + 0.001*(x1*x1 + x2*x2),2); 
 
-			break;
+				break;
 
 			case 15: // Step
 				f=0;
-			for (d=0;d<x.size;d++)
-		{
-			xd = (int)(xs.x[d]+0.5);
-			f=f+xd*xd;
-		}	
-			break;
+				for (d=0;d<x.size;d++)
+				{
+					xd = (int)(xs.x[d]+0.5);
+					f=f+xd*xd;
+				}	
+				break;
 
- 	case 16: // Schwefel 2.21
+ 			case 16: // Schwefel 2.21
 				f=0;
-			for (d=0;d<x.size;d++)
-		{
-			xd = fabs(xs.x[d]);
-			if(xd>f) f=xd;
-		}
-			break;
+				for (d=0;d<x.size;d++)
+				{
+					xd = fabs(xs.x[d]);
+					if(xd>f) f=xd;
+				}
+				break;
 			
 			case 17: // Lennard-Jones
 			f=lennard_jones(xs);
@@ -1571,67 +1581,67 @@ double perf (struct position x, int function, struct SS SS, double objective)
 			case 19: // Sine-sine function
 			f=0;
 			for (d=0;d<x.size;d++)
-		{
-			xd = xs.x[d];
-			f=f-sin(xd)*pow(sin((d+1)*xd*xd/pi),20);
-	
-		}
-		break;
-		
-		case 20: // Perm function
-		beta=10;
-		f=0;
-		for (k=0;k<x.size;k++)
-		{
-			sum1=0; 
-			for (d=0;d<x.size;d++)
 			{
 				xd = xs.x[d];
-				sum1=sum1+  ( pow(d+1,k)+beta)*(pow(xd/(d+1),k)-1);
+				f=f-sin(xd)*pow(sin((d+1)*xd*xd/pi),20);
+	
 			}
-			sum1=sum1*sum1;
-		f=f+sum1;	
-		}
+			break;
+		
+			case 20: // Perm function
+			beta=10;
+			f=0;
+			for (k=0;k<x.size;k++)
+			{
+				sum1=0; 
+				for (d=0;d<x.size;d++)
+				{
+					xd = xs.x[d];
+					sum1=sum1+  ( pow(d+1,k)+beta)*(pow(xd/(d+1),k)-1);
+				}
+				sum1=sum1*sum1;
+			f=f+sum1;	
+			}
 			
-		break;
+			break;
 		
-		case 21: // Coil compression spring  (penalty method)
-			// Ref New Optim. Tech. in Eng. p 644
+			case 21: // Coil compression spring  (penalty method)
+				// Ref New Optim. Tech. in Eng. p 644
 
-		x1=xs.x[0]; // {1,2, ... 70}
-		x2= xs.x[1];//[0.6, 3]
-		x3= xs.x[2];// relaxed form [0.207,0.5]  dx=0.001
-		// In the original problem, it is a list of
-		// acceptable values
-		// {0.207,0.225,0.244,0.263,0.283,0.307,0.331,0.362,0.394,0.4375,0.5}
+			x1=xs.x[0]; // {1,2, ... 70}
+			x2= xs.x[1];//[0.6, 3]
+			x3= xs.x[2];// relaxed form [0.207,0.5]  dx=0.001
+			// In the original problem, it is a list of
+			// acceptable values
+			// {0.207,0.225,0.244,0.263,0.283,0.307,0.331,0.362,0.394,0.4375,0.5}
 
-		f=pi*pi*x2*x3*x3*(x1+2)*0.25;
-		// Constraints
-		ff=constraint(xs,function,0);
+			f=pi*pi*x2*x3*x3*(x1+2)*0.25;
+			// Constraints
+			ff=constraint(xs,function,0);
 
-			if (ff.f[1]>0) {c=1+ff.f[1]; f=f*c*c*c;}
-			if (ff.f[2]>0) {c=1+ff.f[1]; f=f*c*c*c;}
-			if (ff.f[3]>0) {c=1+ff.f[3]; f=f*c*c*c;}
-			if (ff.f[4]>0) {c=1+pow(10,10)*ff.f[4]; f=f*c*c*c;}
-			if (ff.f[5]>0) {c=1+pow(10,10)*ff.f[5]; f=f*c*c*c;}
-		break;
+				if (ff.f[1]>0) {c=1+ff.f[1]; f=f*c*c*c;}
+				if (ff.f[2]>0) {c=1+ff.f[1]; f=f*c*c*c;}
+				if (ff.f[3]>0) {c=1+ff.f[3]; f=f*c*c*c;}
+				if (ff.f[4]>0) {c=1+pow(10,10)*ff.f[4]; f=f*c*c*c;}
+				if (ff.f[5]>0) {c=1+pow(10,10)*ff.f[5]; f=f*c*c*c;}
+			break;
 		
-		case 23: // Penalized
-		f=pow(sin(pi*xs.x[0]),2);
-		for (d=1;d<x.size-1;d++)
-		{
-			f=f+pow(xs.x[d],2)*(1+pow(sin(3*pi*xs.x[d+1]) ,2));
-		}
-		f=0.1*(f+pow(xs.x[x.size-2],2)*(1+pow(sin(2*pi*xs.x[x.size-1]),2)));
+			case 23: // Penalized
+			f=pow(sin(pi*xs.x[0]),2);
+			for (d=1;d<x.size-1;d++)
+			{
+				f=f+pow(xs.x[d],2)*(1+pow(sin(3*pi*xs.x[d+1]) ,2));
+			}
+			f=0.1*(f+pow(xs.x[x.size-2],2)*(1+pow(sin(2*pi*xs.x[x.size-1]),2)));
 		
-		for (d=0;d<x.size;d++)
-		{
-			xd=xs.x[d];
-			if(xd>5) {u=100*pow(xd-5,4); f=f+u;}
-			if(xd<-5) {u=100*pow(-xd-5,4); f=f+u;}
-		}
+			for (d=0;d<x.size;d++)
+			{
+				xd=xs.x[d];
+				if(xd>5) {u=100*pow(xd-5,4); f=f+u;}
+				if(xd<-5) {u=100*pow(-xd-5,4); f=f+u;}
+			}
 		
-		break;
+			break;
 			case 99: // Test
 
 			f=pow(fabs(xs.x[0])-5,2) + pow(fabs(xs.x[1])-5,2);
@@ -1695,49 +1705,50 @@ double perf (struct position x, int function, struct SS SS, double objective)
 			
 			break;
 	
-		f=1.e6*xs.x[0]*xs.x[0];
+			f=1.e6*xs.x[0]*xs.x[0];
 						
-			for (d=1;d<x.size;d++)
-		{
-			xd = xs.x[d];
-			f=f+xd*xd;
-		}
+				for (d=1;d<x.size;d++)
+			{
+				xd = xs.x[d];
+				f=f+xd*xd;
+			}
 		
-		break;
-
-// 2D Peaks function
-		x1=xs.x[0];
-		x2=xs.x[1];
-
-		f=3*(1-x1)*(1-x1)*exp(-x1*x1-(x2+1)*(x2+1))
-		-10*(x1/5-pow(x1,3)-pow(x2,5))*exp(-x1*x1-x2*x2)
-		-(1./3)*exp(-(x1+1)*(x1+1) - x2*x2);
-
-		break;
-
-				// Quartic
-				f=0;
-			for (d=0;d<x.size;d++)
-		{
-			xd = xs.x[d];
-			f=f+(d+1)*pow(xd,4)+alea_normal(0,1);
-		}	
-
-			break;	
-
-			x1=xs.x[0]; x2=xs.x[1];
-			f=(1-x1)*(1-x1)*exp(-x1*x1-(x2+1)*(x2+1))-(x1-x1*x1*x1-pow(x2,5))*exp(-x1*x1-x2*x2);
-			f=-f; // To minimise
 			break;
 
-			xd=xs.x[0];
-			f=xd*(xd+1)*cos(xd);
+	// 2D Peaks function
+			x1=xs.x[0];
+			x2=xs.x[1];
+
+			f=3*(1-x1)*(1-x1)*exp(-x1*x1-(x2+1)*(x2+1))
+			-10*(x1/5-pow(x1,3)-pow(x2,5))*exp(-x1*x1-x2*x2)
+			-(1./3)*exp(-(x1+1)*(x1+1) - x2*x2);
+
 			break;
 
-	}
+					// Quartic
+					f=0;
+				for (d=0;d<x.size;d++)
+			{
+				xd = xs.x[d];
+				f=f+(d+1)*pow(xd,4)+alea_normal(0,1);
+			}	
+
+				break;	
+
+				x1=xs.x[0]; x2=xs.x[1];
+				f=(1-x1)*(1-x1)*exp(-x1*x1-(x2+1)*(x2+1))-(x1-x1*x1*x1-pow(x2,5))*exp(-x1*x1-x2*x2);
+				f=-f; // To minimise
+				break;
+
+				xd=xs.x[0];
+				f=xd*(xd+1)*cos(xd);
+				break;
+
+		}
 
 	return fabs(f-objective);    
 }
+
 //==========================================================
 struct fitness constraint(struct position x, int functCode, double epsConstr)
 {
@@ -2466,4 +2477,40 @@ struct problem problemDef(int functionCode)
 	pb.SS.q.size = pb.SS.D;
 	return pb;
 }
-#include "lennard_jones.c"
+
+double lennard_jones(struct position x)
+{
+	/*
+		This is for black-box optimisation. Therefore, we are not supposed to know
+		that there are some symmetries. That is why the dimension of the problem is
+		3*nb_of_atoms, as it could be 3*nb_of_atoms-6
+	*/
+	int d;
+	int dim = 3;
+	double dist;
+	double f;
+	int i, j;
+	int nPoints = x.size / dim;
+	struct position x1, x2;
+	double zz;
+
+	x1.size = dim; x2.size = dim;
+
+	f = 0;
+	for (i = 0; i < nPoints - 1; i++)
+	{
+		for (d = 0; d < dim; d++)  x1.x[d] = x.x[3 * i + d];
+		for (j = i + 1; j < nPoints; j++)
+		{
+			for (d = 0; d < dim; d++)  x2.x[d] = x.x[3 * j + d];
+
+			dist = distanceL(x1, x2, 2);
+			zz = pow(dist, -6);
+			f = f + zz * (zz - 1);
+		}
+	}
+	f = 4 * f;
+	return f;
+}
+
+//#include "lennard_jones.c"
