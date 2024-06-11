@@ -15,37 +15,26 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="StarndardPSO.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="StandardPSO2007.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="problem.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="perf.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="PSO.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="pso_structures.h">
-      <Filter>Header Files</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="ClampingPosition.md" />
+    <None Include="README.md">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="sub_programs.c">
+    <ClCompile Include="cec2005.c">
       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="sub_programs.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="kiss_rng.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    </ClCompile>
+    <ClCompile Include="cec2005data.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cec2005pb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="lennard_jones.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
