@@ -1,0 +1,749 @@
+﻿  alea.c
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(1,1): warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(8,12): error C2065: 'nBit': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(8,12): error C2057: expected constant expression
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(8,12): error C2466: cannot allocate an array of constant size 0
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(8,7): error C2133: 'list': unknown size
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(9,14): error C2065: 'nBit': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(9,14): error C2057: expected constant expression
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(9,14): error C2466: cannot allocate an array of constant size 0
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(9,6): error C2133: 'listBit': unknown size
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(19,14): warning C4013: 'rand_kiss' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(19,26): error C2065: 'RAND_MAX_KISS': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(23,6): warning C4013: 'genrand64_real2' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(27,17): warning C4013: 'alea_integer' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(27,32): error C2065: 'rMax': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(27,40): error C2065: 'rMax': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(31,14): warning C4013: 'rand' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(31,21): error C2065: 'RAND_MAX': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(36,13): warning C4013: 'fread' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(36,42): error C2065: 'nBit': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(36,48): error C2065: 'f_rand_bin': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(37,15): error C2065: 'nBit': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(37,23): error C2065: 'nCycle': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(37,31): error C2065: 'nCycleMax': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(39,4): error C2065: 'nCycle': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(40,10): warning C4013: 'fclose' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(40,17): error C2065: 'f_rand_bin': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(41,17): warning C4013: 'ERROR' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(42,9): error C2065: 'f_rand_bin': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(42,22): warning C4013: 'fopen' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(42,59): error C2065: 'NULL': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(43,34): error C2065: 'nBit': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(43,40): error C2065: 'f_rand_bin': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(47,14): error C2065: 'nBit': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(51,7): error C2065: 'nBit': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(54,15): error C2065: 'nBit': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(60,9): error C2065: 'rMax': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(62,5): error C2065: 'nCycle': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(66,6): error C2065: 'nCycle': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(66,14): error C2065: 'nCycleMax': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(66,25): error C2065: 'nCycle': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(67,6): error C2065: 'randNumber': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(67,17): error C2065: 'nCycle': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(67,16): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(68,4): error C2065: 'nCycle': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(72,2): error C2065: 'nbRand': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(80,16): error C2065: 'S_max': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(80,16): error C2057: expected constant expression
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(80,16): error C2466: cannot allocate an array of constant size 0
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(80,6): error C2133: 'indexTemp': unknown size
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(112,43): warning C4013: 'floor' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(132,13): error C2065: 'zero': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(145,4): warning C4013: 'printf' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(160,7): warning C4013: 'tan' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(164,5): warning C4013: 'fabs' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(164,19): error C2065: 'zero': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(166,22): error C2065: 'pi': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(170,6): error C2065: 'pi': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(183,5): warning C4013: 'log' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(186,4): warning C4013: 'cos' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(186,33): warning C4013: 'sin' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(189,7): warning C4013: 'pow' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(228,6): warning C4013: 'sqrt' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(237,15): error C2079: 'alea_sphere' uses undefined struct 'vector'
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(252,16): error C2079: 'x' uses undefined struct 'vector'
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(254,4): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(264,5): error C2224: left of '.v' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(267,5): error C2224: left of '.v' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(268,21): error C2224: left of '.v' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(268,28): error C2224: left of '.v' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(312,5): error C2224: left of '.v' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(312,21): error C2224: left of '.v' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(314,2): error C2440: 'return': cannot convert from 'int' to 'vector'
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(317,19): error C2079: 'quasiRand' uses undefined struct 'vectorList'
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(330,20): error C2079: 'qRand' uses undefined struct 'vectorList'
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(342,10): warning C4013: 'gsl_qrng_alloc' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(342,26): error C2065: 'sobol': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(342,9): warning C4047: '=': 'void *' differs in levels of indirection from 'int'
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(351,26): error C2065: 'halton': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(351,9): warning C4047: '=': 'void *' differs in levels of indirection from 'int'
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(355,2): error C2065: 'gsl_qrng': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(355,13): error C2065: 'q': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(355,15): warning C4047: '=': 'int' differs in levels of indirection from 'void *'
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(355,11): error C2106: '=': left operand must be l-value
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(359,3): warning C4013: 'gsl_qrng_get' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(359,17): error C2065: 'q': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(359,26): error C2224: left of '.V' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(362,2): warning C4013: 'gsl_qrng_free' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(362,17): error C2065: 'q': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\alea.c(364,2): error C2440: 'return': cannot convert from 'int' to 'vectorList'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(19,14): error C2061: syntax error: identifier 'kiss_x'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(19,14): error C2059: syntax error: ';'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(20,14): error C2061: syntax error: identifier 'kiss_y'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(20,14): error C2059: syntax error: ';'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(21,14): error C2061: syntax error: identifier 'kiss_z'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(21,14): error C2059: syntax error: ';'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(22,14): error C2061: syntax error: identifier 'kiss_w'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(22,14): error C2059: syntax error: ';'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(23,14): error C2061: syntax error: identifier 'kiss_carry'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(23,14): error C2059: syntax error: ';'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(23,25): error C2513: ' ': no variable declared before '='
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(24,14): error C2061: syntax error: identifier 'kiss_k'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(24,14): error C2059: syntax error: ';'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(25,14): error C2061: syntax error: identifier 'kiss_m'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(25,14): error C2059: syntax error: ';'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(29,27): error C2146: syntax error: missing ')' before identifier 'seed'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(29,27): error C2061: syntax error: identifier 'seed'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(29,27): error C2059: syntax error: ';'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(29,31): error C2059: syntax error: ')'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(30,1): error C2449: found '{' at file scope (missing function header?)
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(36,1): error C2059: syntax error: '}'
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(59,5): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(59,7): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(60,10): error C2065: 'mti': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(60,17): error C2065: 'mti': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(60,21): error C2065: 'NN': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(60,25): error C2065: 'mti': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(61,9): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(61,12): error C2065: 'mti': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(61,11): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(61,47): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(61,50): error C2065: 'mti': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(61,49): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(61,60): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(61,63): error C2065: 'mti': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(61,62): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(61,62): error C1003: error count exceeds 100; stopping compilation
+  cec2005.c
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(1,1): warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(1,3): error C2059: syntax error: 'case'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(2,25): error C2059: syntax error: '}'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(4,3): error C2059: syntax error: 'case'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(7,4): error C2059: syntax error: 'for'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(7,18): error C2143: syntax error: missing '{' before '<'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(7,18): error C2059: syntax error: '<'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(7,30): error C2143: syntax error: missing '{' before '++'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(7,30): error C2059: syntax error: '++'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(7,32): error C2059: syntax error: ')'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(16,3): error C2059: syntax error: 'case'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(17,18): error C2059: syntax error: 'for'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(17,32): error C2143: syntax error: missing '{' before '<'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(17,32): error C2059: syntax error: '<'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(17,44): error C2143: syntax error: missing '{' before '++'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(17,44): error C2059: syntax error: '++'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(17,46): error C2059: syntax error: ')'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(18,97): error C2065: 'xs': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(18,100): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(18,107): error C2065: 'k': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(18,114): error C2059: syntax error: 'break'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(20,3): error C2059: syntax error: 'case'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(22,17): error C2143: syntax error: missing '{' before '<'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(22,17): error C2059: syntax error: '<'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(22,29): error C2143: syntax error: missing '{' before '++'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(22,29): error C2059: syntax error: '++'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(22,31): error C2059: syntax error: ')'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(24,5): error C2374: 'f': redefinition; multiple initialization
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(25,5): error C2059: syntax error: 'for'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(25,16): error C2143: syntax error: missing '{' before '<'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(25,16): error C2059: syntax error: '<'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(25,27): error C2143: syntax error: missing '{' before '++'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(25,27): error C2059: syntax error: '++'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(25,29): error C2059: syntax error: ')'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(34,1): error C2059: syntax error: 'if'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(35,1): error C2374: 'f': redefinition; multiple initialization
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(36,3): error C2059: syntax error: 'break'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(38,3): error C2059: syntax error: 'case'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(40,12): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(41,4): error C2374: 'f': redefinition; multiple initialization
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(42,5): error C2059: syntax error: 'for'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(42,16): error C2143: syntax error: missing '{' before '<'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(42,16): error C2059: syntax error: '<'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(42,27): error C2143: syntax error: missing '{' before '++'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(42,27): error C2059: syntax error: '++'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(42,29): error C2059: syntax error: ')'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(48,5): error C2374: 'f': redefinition; multiple initialization
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(48,17): error C2065: 'sum1': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(49,3): error C2059: syntax error: 'break'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(51,3): error C2059: syntax error: 'case'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(54,5): error C2374: 'sum2': redefinition; multiple initialization
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(55,5): error C2059: syntax error: 'for'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(55,16): error C2143: syntax error: missing '{' before '<'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(55,16): error C2059: syntax error: '<'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(55,27): error C2143: syntax error: missing '{' before '++'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(55,27): error C2059: syntax error: '++'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(55,29): error C2059: syntax error: ')'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(61,17): warning C4013: 'sqrt' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(61,27): error C2065: 'xs': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(61,30): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(61,5): error C2099: initializer is not a constant
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(62,10): error C2143: syntax error: missing '{' before '/='
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(62,10): error C2059: syntax error: '/='
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(63,5): error C2374: 'f': redefinition; multiple initialization
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(63,19): error C2065: 'E': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(63,28): warning C4013: 'exp' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(64,3): error C2059: syntax error: 'break'
+  cec2005data.c
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005data.c(1,1): warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format
+  cec2005pb.c
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005pb.c(1,1): warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005pb.c(1,2): error C2059: syntax error: 'case'
+  cellular_phone.c
+E:\my-repo\StandardPSO\StandardPSO2011\cellular_phone.c(8,3): error C2099: initializer is not a constant
+E:\my-repo\StandardPSO\StandardPSO2011\cellular_phone.c(9,3): error C2099: initializer is not a constant
+E:\my-repo\StandardPSO\StandardPSO2011\cellular_phone.c(13,3): error C2065: 'infinity': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\cellular_phone.c(13,1): error C2099: initializer is not a constant
+E:\my-repo\StandardPSO\StandardPSO2011\cellular_phone.c(15,3): error C2059: syntax error: 'for'
+E:\my-repo\StandardPSO\StandardPSO2011\cellular_phone.c(15,12): error C2143: syntax error: missing '{' before '<='
+E:\my-repo\StandardPSO\StandardPSO2011\cellular_phone.c(15,12): error C2059: syntax error: '<='
+E:\my-repo\StandardPSO\StandardPSO2011\cellular_phone.c(15,20): error C2143: syntax error: missing '{' before '++'
+E:\my-repo\StandardPSO\StandardPSO2011\cellular_phone.c(15,20): error C2059: syntax error: '++'
+E:\my-repo\StandardPSO\StandardPSO2011\cellular_phone.c(15,22): error C2059: syntax error: ')'
+  KISS.c
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(19,14): error C2061: syntax error: identifier 'kiss_x'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(19,14): error C2059: syntax error: ';'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(20,14): error C2061: syntax error: identifier 'kiss_y'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(20,14): error C2059: syntax error: ';'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(21,14): error C2061: syntax error: identifier 'kiss_z'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(21,14): error C2059: syntax error: ';'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(22,14): error C2061: syntax error: identifier 'kiss_w'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(22,14): error C2059: syntax error: ';'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(23,14): error C2061: syntax error: identifier 'kiss_carry'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(23,14): error C2059: syntax error: ';'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(23,25): error C2513: ' ': no variable declared before '='
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(24,14): error C2061: syntax error: identifier 'kiss_k'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(24,14): error C2059: syntax error: ';'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(25,14): error C2061: syntax error: identifier 'kiss_m'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(25,14): error C2059: syntax error: ';'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(29,27): error C2146: syntax error: missing ')' before identifier 'seed'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(29,27): error C2061: syntax error: identifier 'seed'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(29,27): error C2059: syntax error: ';'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(29,31): error C2059: syntax error: ')'
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(30,1): error C2449: found '{' at file scope (missing function header?)
+E:\my-repo\StandardPSO\StandardPSO2011\KISS.c(36,1): error C2059: syntax error: '}'
+  lennard_jones.c
+E:\my-repo\StandardPSO\StandardPSO2011\lennard_jones.c(13,14): error C2037: left of 'size' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\lennard_jones.c(15,18): error C2079: 'x1' uses undefined struct 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\lennard_jones.c(15,22): error C2079: 'x2' uses undefined struct 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\lennard_jones.c(18,5): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\lennard_jones.c(18,18): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\lennard_jones.c(23,26): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\lennard_jones.c(23,31): error C2037: left of 'x' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\lennard_jones.c(26,27): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\lennard_jones.c(26,32): error C2037: left of 'x' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\lennard_jones.c(27,9): warning C4013: 'distanceL' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\lennard_jones.c(28,12): error C2065: 'zero': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\lennard_jones.c(28,21): error C2065: 'infinity': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\lennard_jones.c(29,12): warning C4013: 'pow' undefined; assuming extern returning int
+  main.c
+E:\my-repo\StandardPSO\StandardPSO2011\main.h(30,10): error C1083: Cannot open include file: 'gsl/gsl_qrng.h': No such file or directory
+  mersenne.c
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(59,5): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(59,7): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(60,10): error C2065: 'mti': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(60,17): error C2065: 'mti': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(60,21): error C2065: 'NN': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(60,25): error C2065: 'mti': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(61,9): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(61,12): error C2065: 'mti': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(61,11): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(61,47): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(61,50): error C2065: 'mti': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(61,49): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(61,60): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(61,63): error C2065: 'mti': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(61,62): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(61,80): error C2065: 'mti': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(73,10): error C2065: 'NN': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(73,26): error C2065: 'NN': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(75,9): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(75,11): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(75,18): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(75,20): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(75,28): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(75,30): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(75,39): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(75,41): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(78,16): error C2065: 'NN': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(78,22): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(78,24): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(78,30): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(78,33): error C2065: 'NN': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(78,32): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(81,12): error C2065: 'NN': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(82,9): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(82,11): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(82,18): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(82,20): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(82,28): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(82,30): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(82,39): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(82,41): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(85,16): error C2065: 'NN': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(85,22): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(85,24): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(85,30): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(85,33): error C2065: 'NN': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(85,32): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(88,5): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(88,7): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(96,47): error C2065: 'MATRIX_A': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(98,9): error C2065: 'mti': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(98,16): error C2065: 'NN': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(102,13): error C2065: 'mti': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(102,20): error C2065: 'NN': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(105,20): error C2065: 'NN': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(105,23): error C2065: 'MM': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(106,18): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(106,20): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(106,24): error C2065: 'UM': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(106,29): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(106,31): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(106,37): error C2065: 'LM': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(107,13): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(107,15): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(107,21): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(107,26): error C2065: 'MM': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(107,23): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(109,17): error C2065: 'NN': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(110,18): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(110,20): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(110,24): error C2065: 'UM': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(110,29): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(110,31): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(110,37): error C2065: 'LM': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(111,13): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(111,15): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(111,21): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(111,27): error C2065: 'MM': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(111,30): error C2065: 'NN': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(111,23): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(113,14): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(113,17): error C2065: 'NN': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(113,16): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(113,23): error C2065: 'UM': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(113,28): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(113,30): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(113,34): error C2065: 'LM': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(114,9): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(114,12): error C2065: 'NN': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(114,11): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(114,20): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(114,23): error C2065: 'MM': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(114,22): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(116,9): error C2065: 'mti': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(119,9): error C2065: 'mt': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(119,12): error C2065: 'mti': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(119,11): error C2109: subscript requires array or pointer type
+E:\my-repo\StandardPSO\StandardPSO2011\mersenne.c(96,31): error C2099: initializer is not a constant
+  perf.c
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(13,18): error C2079: 'ff' uses undefined struct 'fitness'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(20,18): error C2079: 'xs' uses undefined struct 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005data.c(1,1): warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(26,17): error C2079: 'pb' uses undefined struct 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(27,15): error C2079: 'param' uses undefined struct 'param'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(67,5): error C2037: left of 'normalise' specifies undefined struct/union 'SS'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(70,7): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(70,12): error C2037: left of 'size' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(71,16): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(72,7): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(72,12): error C2037: left of 'min' specifies undefined struct/union 'SS'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(72,23): error C2037: left of 'max' specifies undefined struct/union 'SS'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(72,33): error C2037: left of 'min' specifies undefined struct/union 'SS'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(72,44): error C2037: left of 'x' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(72,51): error C2037: left of 'normalise' specifies undefined struct/union 'SS'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(74,9): error C2440: '=': cannot convert from 'position' to 'int'
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(7,23): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(9,10): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(12,10): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(12,20): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(12,30): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(17,37): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(18,22): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(18,58): warning C4013: 'cos' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(18,67): error C2065: 'pi': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(18,100): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(22,22): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(22,44): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(22,52): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(25,20): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(30,24): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(34,30): warning C4013: 'fabs' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(34,35): warning C4013: 'alea_normal' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(42,20): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(44,13): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(46,24): warning C4013: 'sqrt' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(55,20): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(57,17): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(59,25): error C2065: 'pi': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(61,30): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(62,16): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(63,19): error C2065: 'E': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005.c(63,28): warning C4013: 'exp' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(87,23): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(89,12): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(98,23): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(100,12): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(109,12): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(111,23): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(114,12): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(127,23): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(129,12): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(130,33): error C2065: 'pi': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(132,13): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(138,13): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(139,12): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(140,17): warning C4013: 'sign' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(158,7): error C2037: left of 'size' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(159,4): error C2065: 'pi': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(159,7): warning C4013: 'acos' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(160,15): error C2037: left of 'size' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(162,10): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(164,20): error C2065: 'pi': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(172,15): error C2037: left of 'size' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(174,12): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(175,11): warning C4013: 'sin' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(181,15): error C2037: left of 'size' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(183,12): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(192,15): error C2037: left of 'size' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(194,17): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(203,15): error C2037: left of 'size' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(205,12): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(208,15): error C2037: left of 'size' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(210,18): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(210,27): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(220,15): error C2037: left of 'size' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(222,12): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(226,13): warning C4013: 'pow' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(226,17): error C2037: left of 'size' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(226,24): error C2037: left of 'size' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(226,39): error C2037: left of 'size' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(233,14): error C2065: 'btsNb': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(236,14): error C2065: 'bcsNb': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(236,38): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(236,44): error C2065: 'btsNb': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(237,14): error C2065: 'zero': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(237,29): error C2065: 'zero': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(241,14): error C2065: 'bcsNb': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(243,14): error C2065: 'btsNb': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(245,11): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(245,17): error C2065: 'btsNb': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(247,7): error C2065: 'bcsNb': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(247,13): error C2065: 'btsNb': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(248,21): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(249,21): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(257,15): error C2037: left of 'size' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(259,12): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(265,11): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(265,23): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(273,11): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(273,23): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(280,15): error C2037: left of 'size' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(282,18): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(289,15): error C2037: left of 'size' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(291,17): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(297,6): warning C4013: 'lennard_jones' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(301,20): error C2037: left of 'x' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(301,27): error C2037: left of 'x' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(301,35): error C2037: left of 'x' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(301,42): error C2037: left of 'x' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(308,15): error C2037: left of 'size' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(310,12): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf.c(310,12): error C1003: error count exceeds 100; stopping compilation
+  perf_pressure_vessel.c
+E:\my-repo\StandardPSO\StandardPSO2011\perf_pressure_vessel.c(5,6): error C2065: 'xs': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\perf_pressure_vessel.c(5,9): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf_pressure_vessel.c(6,6): error C2065: 'xs': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\perf_pressure_vessel.c(6,9): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf_pressure_vessel.c(7,6): error C2065: 'xs': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\perf_pressure_vessel.c(7,9): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf_pressure_vessel.c(8,6): error C2065: 'xs': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\perf_pressure_vessel.c(8,9): error C2224: left of '.x' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\perf_pressure_vessel.c(10,3): error C2099: initializer is not a constant
+E:\my-repo\StandardPSO\StandardPSO2011\perf_pressure_vessel.c(14,6): warning C4013: 'constraint' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\perf_pressure_vessel.c(14,17): error C2065: 'xs': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\perf_pressure_vessel.c(14,20): error C2065: 'function': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\perf_pressure_vessel.c(14,3): error C2099: initializer is not a constant
+E:\my-repo\StandardPSO\StandardPSO2011\perf_pressure_vessel.c(16,4): error C2059: syntax error: 'if'
+E:\my-repo\StandardPSO\StandardPSO2011\perf_pressure_vessel.c(17,4): error C2059: syntax error: 'if'
+E:\my-repo\StandardPSO\StandardPSO2011\perf_pressure_vessel.c(18,4): error C2059: syntax error: 'if'
+  pressure_vessel.c
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(2,3): error C2059: syntax error: 'case'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(5,5): error C2143: syntax error: missing '{' before '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(5,5): error C2059: syntax error: '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(6,5): error C2143: syntax error: missing '{' before '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(6,5): error C2059: syntax error: '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(7,5): error C2143: syntax error: missing '{' before '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(7,5): error C2059: syntax error: '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(9,5): error C2143: syntax error: missing '{' before '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(9,5): error C2059: syntax error: '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(10,5): error C2143: syntax error: missing '{' before '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(10,5): error C2059: syntax error: '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(11,5): error C2143: syntax error: missing '{' before '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(11,5): error C2059: syntax error: '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(13,5): error C2143: syntax error: missing '{' before '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(13,5): error C2059: syntax error: '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(13,22): error C2143: syntax error: missing '{' before '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(13,22): error C2059: syntax error: '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(14,5): error C2143: syntax error: missing '{' before '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(14,5): error C2059: syntax error: '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(15,5): error C2143: syntax error: missing '{' before '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(15,5): error C2059: syntax error: '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(15,23): error C2143: syntax error: missing '{' before '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(15,23): error C2059: syntax error: '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(16,5): error C2143: syntax error: missing '{' before '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(16,5): error C2059: syntax error: '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(18,3): error C2143: syntax error: missing '{' before '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(18,3): error C2059: syntax error: '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(19,3): error C2143: syntax error: missing '{' before '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(19,3): error C2059: syntax error: '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(20,3): error C2143: syntax error: missing '{' before '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(20,3): error C2059: syntax error: '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(21,5): error C2143: syntax error: missing '{' before '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(21,5): error C2059: syntax error: '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(22,5): error C2143: syntax error: missing '{' before '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(22,5): error C2059: syntax error: '.'
+E:\my-repo\StandardPSO\StandardPSO2011\pressure_vessel.c(23,3): error C2059: syntax error: 'break'
+  problemDef.c
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(3,16): error C2079: 'problemDef' uses undefined struct 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(6,17): error C2079: 'pb' uses undefined struct 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(14,5): error C2224: left of '.function' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(17,5): error C2224: left of '.epsilon' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(18,5): error C2224: left of '.objective' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(20,5): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(21,5): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(25,13): error C2224: left of '.function' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(28,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(30,22): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(32,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(33,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(34,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(37,6): error C2224: left of '.evalMax' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(38,6): error C2224: left of '.epsilon' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(39,6): error C2224: left of '.objective' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\cec2005pb.c(1,1): warning C4335: Mac file format detected: please convert the source file to either DOS or UNIX format
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(46,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(49,22): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(51,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(52,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(53,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(56,6): error C2224: left of '.evalMax' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(57,6): error C2224: left of '.epsilon' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(58,6): error C2224: left of '.objective' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(62,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(65,22): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(67,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(68,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(69,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(71,6): error C2224: left of '.epsilon' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(72,6): error C2224: left of '.evalMax' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(73,6): error C2224: left of '.objective' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(80,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(83,22): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(85,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(86,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(87,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(90,6): error C2224: left of '.evalMax' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(91,6): error C2224: left of '.epsilon' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(92,6): error C2224: left of '.objective' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(98,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(101,22): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(103,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(104,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(105,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(108,6): error C2224: left of '.evalMax' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(109,6): error C2224: left of '.epsilon' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(116,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(118,22): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(120,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(121,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(122,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(124,6): error C2224: left of '.evalMax' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(125,6): error C2224: left of '.epsilon' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(126,6): error C2224: left of '.objective' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(132,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(134,6): error C2224: left of '.objective' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(135,6): error C2224: left of '.epsilon' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(137,22): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(139,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(140,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(141,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(143,6): error C2224: left of '.evalMax' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(149,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(150,6): error C2224: left of '.objective' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(151,22): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(153,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(154,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(155,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(157,6): error C2224: left of '.evalMax' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(163,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(165,22): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(167,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(168,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(169,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(171,6): error C2224: left of '.evalMax' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(172,6): error C2224: left of '.objective' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(173,6): error C2224: left of '.epsilon' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(177,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(178,6): error C2224: left of '.objective' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(179,22): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(181,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(181,23): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(181,31): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(182,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(182,23): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(183,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(185,6): error C2224: left of '.evalMax' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(191,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(193,22): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(195,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(196,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(197,7): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(199,6): error C2224: left of '.evalMax' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(200,6): error C2224: left of '.objective' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(201,6): error C2224: left of '.epsilon' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(202,6): error C2224: left of '.SS' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(207,3): error C2065: 'btsNb': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(207,13): error C2065: 'bcsNb': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(208,6): error C2224: left of '.SS' must have struct/union type
+  PSO.c
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(208,11): error C2065: 'bcsNb': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\problemDef.c(208,11): error C1003: error count exceeds 100; stopping compilation
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(1,15): error C2079: 'PSO' uses undefined struct 'result'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(7,18): error C2079: 'Gr' uses undefined struct 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(8,16): error C2079: 'GX' uses undefined struct 'vector'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(9,12): error C2065: 'S_max': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(9,12): error C2057: expected constant expression
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(9,12): error C2466: cannot allocate an array of constant size 0
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(9,6): error C2133: 'index': unknown size
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(13,12): error C2065: 'S_max': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(13,12): error C2057: expected constant expression
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(13,12): error C2466: cannot allocate an array of constant size 0
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(13,19): error C2065: 'S_max': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(13,19): error C2057: expected constant expression
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(13,19): error C2466: cannot allocate an array of constant size 0
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(13,6): error C2087: 'LINKS': missing subscript
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(13,6): error C2133: 'LINKS': unknown size
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(18,16): error C2079: 'PX' uses undefined struct 'vector'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(19,20): error C2079: 'qRand' uses undefined struct 'vectorList'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(20,16): error C2079: 'R' uses undefined struct 'result'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(24,16): error C2079: 'V1' uses undefined struct 'vector'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(24,19): error C2079: 'V2' uses undefined struct 'vector'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(30,5): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(30,10): error C2037: left of 'SS' specifies undefined struct/union 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(31,5): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(31,10): error C2037: left of 'SS' specifies undefined struct/union 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(32,5): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(32,10): error C2037: left of 'SS' specifies undefined struct/union 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(33,5): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(33,10): error C2037: left of 'SS' specifies undefined struct/union 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(34,5): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(34,10): error C2037: left of 'SS' specifies undefined struct/union 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(37,4): error C2037: left of 'p' specifies undefined struct/union 'param'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(38,4): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(38,11): error C2037: left of 'S' specifies undefined struct/union 'param'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(39,10): error C2037: left of 'BW' specifies undefined struct/union 'param'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(44,20): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(46,5): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(46,20): error C2037: left of 'SS' specifies undefined struct/union 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(47,5): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(47,20): error C2037: left of 'SS' specifies undefined struct/union 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(50,5): error C2037: left of 'SS' specifies undefined struct/union 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(50,38): error C2037: left of 'SS' specifies undefined struct/union 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(55,20): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(58,19): error C2037: left of 'SS' specifies undefined struct/union 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(60,7): error C2037: left of 'SS' specifies undefined struct/union 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(60,34): error C2037: left of 'SS' specifies undefined struct/union 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(60,53): error C2037: left of 'SS' specifies undefined struct/union 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(61,6): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(61,21): warning C4013: 'alea' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(62,6): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(62,34): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(62,55): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(70,8): warning C4013: 'quasiRand' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(70,18): error C2037: left of 'SS' specifies undefined struct/union 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(70,28): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(72,21): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(74,19): error C2037: left of 'SS' specifies undefined struct/union 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(76,7): error C2037: left of 'SS' specifies undefined struct/union 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(76,34): error C2037: left of 'SS' specifies undefined struct/union 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(76,53): error C2037: left of 'SS' specifies undefined struct/union 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(77,6): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(77,44): error C2224: left of '.V' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(78,6): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(78,34): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(78,55): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(85,5): error C2037: left of 'SS' specifies undefined struct/union 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(87,21): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(89,6): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(89,16): warning C4013: 'quantis' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(89,27): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(89,36): error C2037: left of 'SS' specifies undefined struct/union 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(94,2): error C2065: 'errMax': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(95,2): error C2065: 'errMin': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(95,9): error C2065: 'infinity': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(96,20): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(98,5): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(98,17): warning C4013: 'perf' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(98,25): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(98,34): error C2037: left of 'function' specifies undefined struct/union 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(98,46): error C2037: left of 'SS' specifies undefined struct/union 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(98,52): error C2037: left of 'objective' specifies undefined struct/union 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(99,5): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(99,17): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(105,8): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(105,13): error C2037: left of 'evalMax' specifies undefined struct/union 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(105,27): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(105,32): error C2037: left of 'evalMax' specifies undefined struct/union 'problem'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(106,4): error C2224: left of '.nEval' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(106,14): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(109,4): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(111,15): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(111,22): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(113,20): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(115,8): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(118,6): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(135,20): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(152,9): error C2037: left of 'BW' specifies undefined struct/union 'param'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(156,22): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(160,2): warning C4013: 'aleaIndex' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(160,21): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(167,11): error C2037: left of 'topology' specifies undefined struct/union 'param'
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(171,24): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(173,24): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(188,24): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(190,24): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(194,23): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(200,29): error C2224: left of '.SW' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\PSO.c(200,29): error C1003: error count exceeds 100; stopping compilation
+  repulsion.c
+E:\my-repo\StandardPSO\StandardPSO2011\repulsion.c(5,10): error C2065: 'xs': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\repulsion.c(5,13): error C2224: left of '.size' must have struct/union type
+E:\my-repo\StandardPSO\StandardPSO2011\repulsion.c(5,18): error C2065: 'Dim': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\repulsion.c(7,2): error C2099: initializer is not a constant
+E:\my-repo\StandardPSO\StandardPSO2011\repulsion.c(12,3): error C2059: syntax error: 'for'
+E:\my-repo\StandardPSO\StandardPSO2011\repulsion.c(12,13): error C2143: syntax error: missing '{' before '<'
+E:\my-repo\StandardPSO\StandardPSO2011\repulsion.c(12,13): error C2059: syntax error: '<'
+E:\my-repo\StandardPSO\StandardPSO2011\repulsion.c(12,17): error C2143: syntax error: missing '{' before '++'
+E:\my-repo\StandardPSO\StandardPSO2011\repulsion.c(12,17): error C2059: syntax error: '++'
+E:\my-repo\StandardPSO\StandardPSO2011\repulsion.c(12,19): error C2059: syntax error: ')'
+  tools.c
+E:\my-repo\StandardPSO\StandardPSO2011\tools.c(18,18): error C2037: left of 'size' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\tools.c(19,11): warning C4013: 'pow' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\tools.c(19,16): warning C4013: 'fabs' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\tools.c(19,21): error C2037: left of 'x' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\tools.c(19,31): error C2037: left of 'x' specifies undefined struct/union 'position'
+E:\my-repo\StandardPSO\StandardPSO2011\tools.c(49,5): warning C4013: 'sqrt' undefined; assuming extern returning int
+E:\my-repo\StandardPSO\StandardPSO2011\tools.c(49,10): error C2065: 'pi': undeclared identifier
+E:\my-repo\StandardPSO\StandardPSO2011\tools.c(52,3): warning C4013: 'ERROR' undefined; assuming extern returning int
+  Generating Code...
