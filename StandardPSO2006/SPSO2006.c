@@ -156,8 +156,7 @@ int alea_integer(int a, int b)
 }
 
 double perf(int s, int function)
-{
-	// Evaluate the fitness value for the particle of rank s
+{// Evaluate the fitness value for the particle of rank s
 	double c;
 	int d, d1;
 	int i, j, k;
@@ -177,18 +176,18 @@ double perf(int s, int function)
 		-32, -32, -32, -32, -32, -16, -16, -16, -16, -16, 16, 16, 16, 16, 16, 32, 32, 32, 32, 32
 	  }
 	};
-
 	// For polynomial fitting problem
 	int const M = 60;
 	double py, y = -1, dx = (double)M;
 
 	nb_eval = nb_eval + 1;
-	xs = X[s]; // one Particle position;
+	xs = X[s];
 
 	switch (function)
 	{
 	case 0: // Parabola (Sphere)
-		f = 0; p = 0;
+		f = 0;
+		p = 0; // Shift
 		for (d = 0; d < D; d++)
 		{
 			xd = xs.x[d] - p;
@@ -196,12 +195,153 @@ double perf(int s, int function)
 		}
 		break;
 
-	default:
+	case 1: // De Jong's f4
+		f = 0;
+		p = 0; // Shift
+		for (d = 0; d < D; d++)
+		{
+			xd = xs.x[d] - p;
+			f = f + (d + 1) * xd * xd * xd * xd;
+		}
+		break;
+
+
+	case 2: // Griewank
+		f = 0;
+		p = 1;
+		for (d = 0; d < D; d++)
+		{
+			xd = xs.x[d];
+			f = f + xd * xd;
+			p = p * cos(xd / sqrt(d + 1));
+		}
+		f = f / 4000 - p + 1;
+		break;
+
+	case 3: // Rosenbrock
+		f = 0;
+		t0 = xs.x[0];
+		for (d = 1; d < D; d++)
+		{
+			t1 = xs.x[d];
+			tt = 1 - t0;
+			f += tt * tt;
+			tt = t1 - t0 * t0;
+			f += 100 * tt * tt;
+			t0 = t1;
+		}
+		break;
+
+	case 4: // Step
+		f = 0;
+		for (d = 0; d < D; d++) f = f + (int)xs.x[d];
+		break;
+
+
+	case 6: //Foxholes 2D
+		f = 0;
+		for (j = 0; j < 25; j++)
+		{
+			sum1 = 0;
+			for (d = 0; d < 2; d++)
+			{
+				sum1 = sum1 + pow(xs.x[d] - a[d][j], 6);
+			}
+			f = f + 1 / (j + 1 + sum1);
+		}
+		f = 1 / (0.002 + f);
+		break;
+
+	case 7: // Polynomial fitting problem
+		// on [-100 100]^9
+		f = 0;
+		dx = 2 / dx;
+		for (i = 0; i <= M; i++)
+		{
+			py = xs.x[0];
+			for (d = 1; d < D; d++)
+			{
+				py = y * py + xs.x[d];
+			}
+			if (py < -1 || py > 1) f += (1 - py) * (1 - py);
+			y += dx;
+		}
+		py = xs.x[0];
+		for (d = 1; d < D; d++) py = 1.2 * py + xs.x[d];
+		py = py - 72.661;
+		if (py < 0) f += py * py;
+		py = xs.x[0];
+		for (d = 1; d < D; d++) py = -1.2 * py + xs.x[d];
+		py = py - 72.661;
+		if (py < 0) f += py * py;
+		break;
+
+	case 8: // Clerc's f1, Alpine function, min 0
+		f = 0;
+		for (d = 0; d < D; d++)
+		{
+			xd = xs.x[d];
+			f += fabs(xd * sin(xd) + 0.1 * xd);
+		}
+		break;
+
+	case 9: // Rastrigin. Minimum value 0. Solution (0,0 ...0)
+		k = 10;
+		f = 0;
+		for (d = 0; d < D; d++)
+		{
+			xd = xs.x[d];
+			f += xd * xd - k * cos(2 * pi * xd);
+		}
+		f += D * k;
+		break;
+
+	case 10: // Ackley
+		sum1 = 0;
+		sum2 = 0;
+		for (d = 0; d < D; d++)
+		{
+			xd = xs.x[d];
+			sum1 += xd * xd;
+			sum2 += cos(2 * pi * xd);
+		}
+		y = D;
+		f = (-20 * exp(-0.2 * sqrt(sum1 / y)) - exp(sum2 / y) + 20 + E);
+		break;
+
+
+	case 13: // 2D Tripod function (Louis Gacogne)
+		// Search [-100, 100]^2. min 0 on (0  -50)
+		x1 = xs.x[0];
+		x2 = xs.x[1];
+		if (x2 < 0)
+		{
+			f = fabs(x1) + fabs(x2 + 50);
+		}
+		else
+		{
+			if (x1 < 0)
+				f = 1 + fabs(x1 + 50) + fabs(x2 - 50);
+			else
+				f = 2 + fabs(x1 - 50) + fabs(x2 - 50);
+		}
+		break;
+
+	case 17: // KrishnaKumar
+		f = 0;
+		for (d = 0; d < D - 1; d++)
+		{
+			f = f + sin(xs.x[d] + xs.x[d + 1]) + sin(2 * xs.x[d] * xs.x[d + 1] / 3);
+		}
+		break;
+
+	case 18: // Eason 2D (usually on [-100,100]
+		// Minimum -1  on (pi,pi)
+		x1 = xs.x[0]; x2 = xs.x[1];
+		f = -cos(x1) * cos(x2) / exp((x1 - pi) * (x1 - pi) + (x2 - pi) * (x2 - pi));
 		break;
 	}
-
-	// default:
-	return 0;
+	return f;
 }
 
 int main_2006()
@@ -252,7 +392,7 @@ int main_2006()
 	pi = acos(-1);
 
 	//----------------------------------------------- PROBLEM
-	function = 13; //Function code
+	function = 0; //Function code
 	/*
 	0 Parabola (Sphere)
 	1 De Jong' f4
